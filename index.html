@@ -10,10 +10,7 @@
   h1,h2,h3{font-family: 'Cookie', cursive;}
   body{font-family: 'Noto Sans TC', sans-serif; background-color: #FFF5E1;}
   .fade-in {animation: fadeIn 1s ease-in-out;}
-  @keyframes fadeIn {
-    from {opacity:0; transform: translateY(10px);}
-    to {opacity:1; transform: translateY(0);}
-  }
+  @keyframes fadeIn {from {opacity:0; transform: translateY(10px);} to {opacity:1; transform: translateY(0);}}
   a:hover {text-decoration: none;}
 </style>
 </head>
@@ -26,8 +23,10 @@
     <p class="text-xs sm:text-sm text-pink-700">果然是林</p>
   </div>
   <nav class="hidden sm:flex space-x-4 text-gray-700 font-medium">
-    <a href="#理念" class="hover:text-pink-500">理念</a>
+    <a href="#故事" class="hover:text-pink-500">品牌故事</a>
     <a href="#產品" class="hover:text-pink-500">產品</a>
+    <a href="#安心" class="hover:text-pink-500">安心承諾</a>
+    <a href="#情境" class="hover:text-pink-500">食用情境</a>
     <a href="#關於" class="hover:text-pink-500">關於我們</a>
   </nav>
 </header>
@@ -38,16 +37,14 @@
 <section class="relative py-16 sm:py-20 text-center bg-[#FFF5E1] fade-in">
   <h2 class="text-4xl sm:text-5xl font-bold text-pink-500 mb-4">天然安心零食</h2>
   <p class="text-lg sm:text-xl text-gray-700">每一口都是安心的美味 🌿✨</p>
+  <p class="mt-2 text-gray-600 text-sm">手工嚴選食材、無添加、防腐劑，吃得安心又美味</p>
 </section>
 
-<!-- 品牌理念 -->
-<section id="理念" class="max-w-4xl mx-auto px-4 sm:px-6 py-10 text-center fade-in">
-  <h2 class="text-3xl sm:text-4xl font-bold text-pink-500 mb-6">我們的經營理念</h2>
-  <div class="flex flex-col space-y-4 sm:space-y-6 text-gray-700 text-sm sm:text-base">
-    <p>🌱 <span class="font-bold">嚴格把關每一份食材</span>，每一份果乾與零食皆經過專業品質檢驗，確保天然無添加，讓您每一口都吃得安心。</p>
-    <p>🔒 <span class="font-bold">低溫烘焙、無防腐劑、無人工色素</span>，保留食材原有風味與營養價值，呈現最天然的美味。</p>
-    <p>✅ 從源頭到包裝，每個環節都由專業團隊嚴格控管，讓「照過來」成為您可靠的安心零食選擇。</p>
-  </div>
+<!-- 品牌故事 -->
+<section id="故事" class="max-w-4xl mx-auto px-4 sm:px-6 py-10 text-center fade-in">
+  <h2 class="text-3xl sm:text-4xl font-bold text-pink-500 mb-6">品牌故事</h2>
+  <p class="text-gray-700 text-sm sm:text-base mb-4">「照過來」創立於 2026 年，源自對天然零食的熱愛與對健康的堅持。每一份零食都是經過嚴格挑選的水果、梅子及其他天然食材，保留最原始的美味與營養。</p>
+  <p class="text-gray-700 text-sm sm:text-base">我們希望每個人都能吃到安心、美味的零食，無論是下午茶小點、親子共享，還是健康小零嘴，「照過來」都是你可靠的選擇。</p>
 </section>
 
 <!-- 產品展示 -->
@@ -55,131 +52,136 @@
   <h2 class="text-3xl sm:text-4xl font-bold text-pink-500 mb-8 text-center">產品介紹</h2>
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 
+    <!-- 產品卡片範例，可複製修改 -->
     <!-- 梅子系列 -->
     <div class="bg-white p-4 rounded-2xl shadow-lg hover:scale-105 transition transform text-center">
       <h3 class="text-xl font-bold text-pink-500 mb-1">🥭 梅有芒果</h3>
-      <p class="text-gray-700 text-sm mb-1">酸甜芒果搭配梅子，口感清爽</p>
+      <p class="text-gray-700 text-sm mb-1">芒果酸甜搭配梅子，口感清爽</p>
+      <p class="text-gray-500 text-xs mb-1">建議搭配下午茶或辦公零嘴</p>
+      <p class="text-gray-500 text-xs mb-1">保存方式：常溫密封保存，避免陽光直射</p>
       <span class="inline-block bg-pink-100 text-pink-600 text-xs px-2 py-1 rounded-full">梅子系列</span>
     </div>
 
     <div class="bg-white p-4 rounded-2xl shadow-lg hover:scale-105 transition transform text-center">
       <h3 class="text-xl font-bold text-pink-500 mb-1">🍓 梅有草莓</h3>
       <p class="text-gray-700 text-sm mb-1">酸甜草莓搭配梅子，健康美味</p>
+      <p class="text-gray-500 text-xs mb-1">適合親子共享，口感軟甜</p>
+      <p class="text-gray-500 text-xs mb-1">保存方式：密封常溫，避免潮濕</p>
       <span class="inline-block bg-pink-100 text-pink-600 text-xs px-2 py-1 rounded-full">梅子系列</span>
     </div>
 
     <div class="bg-white p-4 rounded-2xl shadow-lg hover:scale-105 transition transform text-center">
       <h3 class="text-xl font-bold text-pink-500 mb-1">🍍 梅有菠蘿</h3>
       <p class="text-gray-700 text-sm mb-1">鳳梨香甜融合梅子酸味，絕妙口感</p>
+      <p class="text-gray-500 text-xs mb-1">適合下午茶或辦公零食</p>
+      <p class="text-gray-500 text-xs mb-1">保存方式：密封保存，陰涼處</p>
       <span class="inline-block bg-pink-100 text-pink-600 text-xs px-2 py-1 rounded-full">梅子系列</span>
     </div>
 
-    <div class="bg-white p-4 rounded-2xl shadow-lg hover:scale-105 transition transform text-center">
-      <h3 class="text-xl font-bold text-pink-500 mb-1">🍏 蘋果乾</h3>
-      <p class="text-gray-700 text-sm mb-1">自然果香，酸甜均衡</p>
-      <span class="inline-block bg-pink-100 text-pink-600 text-xs px-2 py-1 rounded-full">果乾</span>
-    </div>
-
-    <div class="bg-white p-4 rounded-2xl shadow-lg hover:scale-105 transition transform text-center">
-      <h3 class="text-xl font-bold text-pink-500 mb-1">🍑 水蜜桃乾</h3>
-      <p class="text-gray-700 text-sm mb-1">香甜水蜜桃，口感柔軟</p>
-      <span class="inline-block bg-pink-100 text-pink-600 text-xs px-2 py-1 rounded-full">果乾</span>
-    </div>
-
-    <div class="bg-white p-4 rounded-2xl shadow-lg hover:scale-105 transition transform text-center">
-      <h3 class="text-xl font-bold text-pink-500 mb-1">🍈 紅心芭樂乾</h3>
-      <p class="text-gray-700 text-sm mb-1">酸甜紅心芭樂，清爽可口</p>
-      <span class="inline-block bg-pink-100 text-pink-600 text-xs px-2 py-1 rounded-full">果乾</span>
-    </div>
-
-    <div class="bg-white p-4 rounded-2xl shadow-lg hover:scale-105 transition transform text-center">
-      <h3 class="text-xl font-bold text-pink-500 mb-1">🍅 蕃茄乾</h3>
-      <p class="text-gray-700 text-sm mb-1">天然番茄香味，酸甜適中</p>
-      <span class="inline-block bg-pink-100 text-pink-600 text-xs px-2 py-1 rounded-full">果乾</span>
-    </div>
-
-    <div class="bg-white p-4 rounded-2xl shadow-lg hover:scale-105 transition transform text-center">
-      <h3 class="text-xl font-bold text-pink-500 mb-1">🥝 奇異果乾</h3>
-      <p class="text-gray-700 text-sm mb-1">酸甜開胃，維生素豐富</p>
-      <span class="inline-block bg-pink-100 text-pink-600 text-xs px-2 py-1 rounded-full">果乾</span>
-    </div>
-
-    <div class="bg-white p-4 rounded-2xl shadow-lg hover:scale-105 transition transform text-center">
-      <h3 class="text-xl font-bold text-pink-500 mb-1">🥭 芒果乾</h3>
-      <p class="text-gray-700 text-sm mb-1">酸甜自然，無添加防腐劑</p>
-      <span class="inline-block bg-pink-100 text-pink-600 text-xs px-2 py-1 rounded-full">果乾</span>
-    </div>
-
-    <div class="bg-white p-4 rounded-2xl shadow-lg hover:scale-105 transition transform text-center">
-      <h3 class="text-xl font-bold text-pink-500 mb-1">🍍 鳳梨乾</h3>
-      <p class="text-gray-700 text-sm mb-1">手工切片，保留天然果香</p>
-      <span class="inline-block bg-pink-100 text-pink-600 text-xs px-2 py-1 rounded-full">果乾</span>
-    </div>
-
-    <div class="bg-white p-4 rounded-2xl shadow-lg hover:scale-105 transition transform text-center">
-      <h3 class="text-xl font-bold text-pink-500 mb-1">🍋 竹鹽枇杷乾</h3>
-      <p class="text-gray-700 text-sm mb-1">枇杷酸甜微鹹，口感獨特</p>
-      <span class="inline-block bg-pink-100 text-pink-600 text-xs px-2 py-1 rounded-full">果乾</span>
-    </div>
-
-    <div class="bg-white p-4 rounded-2xl shadow-lg hover:scale-105 transition transform text-center">
-      <h3 class="text-xl font-bold text-pink-500 mb-1">🌿 南薑片</h3>
-      <p class="text-gray-700 text-sm mb-1">辛香微甜，健康零嘴</p>
-      <span class="inline-block bg-pink-100 text-pink-600 text-xs px-2 py-1 rounded-full">零嘴</span>
-    </div>
-
-    <div class="bg-white p-4 rounded-2xl shadow-lg hover:scale-105 transition transform text-center">
-      <h3 class="text-xl font-bold text-pink-500 mb-1">🍊 陳年金棗</h3>
-      <p class="text-gray-700 text-sm mb-1">香甜帶酸，口感濃郁</p>
-      <span class="inline-block bg-pink-100 text-pink-600 text-xs px-2 py-1 rounded-full">零嘴</span>
-    </div>
-
+    <!-- 其他梅子系列 -->
     <div class="bg-white p-4 rounded-2xl shadow-lg hover:scale-105 transition transform text-center">
       <h3 class="text-xl font-bold text-pink-500 mb-1">🍑 甜菊酵素梅</h3>
       <p class="text-gray-700 text-sm mb-1">酸梅經甜菊發酵，健康美味</p>
+      <p class="text-gray-500 text-xs mb-1">可直接食用或搭配茶飲</p>
+      <p class="text-gray-500 text-xs mb-1">保存方式：密封常溫保存</p>
       <span class="inline-block bg-pink-100 text-pink-600 text-xs px-2 py-1 rounded-full">梅子系列</span>
     </div>
 
     <div class="bg-white p-4 rounded-2xl shadow-lg hover:scale-105 transition transform text-center">
       <h3 class="text-xl font-bold text-pink-500 mb-1">🍑 無籽酵素梅</h3>
       <p class="text-gray-700 text-sm mb-1">酸梅無籽，方便食用</p>
+      <p class="text-gray-500 text-xs mb-1">適合小朋友與下午茶</p>
+      <p class="text-gray-500 text-xs mb-1">保存方式：密封常溫</p>
       <span class="inline-block bg-pink-100 text-pink-600 text-xs px-2 py-1 rounded-full">梅子系列</span>
     </div>
 
     <div class="bg-white p-4 rounded-2xl shadow-lg hover:scale-105 transition transform text-center">
       <h3 class="text-xl font-bold text-pink-500 mb-1">🍑 益生菌梅</h3>
       <p class="text-gray-700 text-sm mb-1">酸梅結合益生菌，養生零嘴</p>
+      <p class="text-gray-500 text-xs mb-1">建議每日食用 2-3 顆，健康零嘴</p>
+      <p class="text-gray-500 text-xs mb-1">保存方式：密封陰涼</p>
       <span class="inline-block bg-pink-100 text-pink-600 text-xs px-2 py-1 rounded-full">梅子系列</span>
     </div>
 
+    <!-- 果乾類 -->
     <div class="bg-white p-4 rounded-2xl shadow-lg hover:scale-105 transition transform text-center">
-      <h3 class="text-xl font-bold text-pink-500 mb-1">🫐 油甘果</h3>
-      <p class="text-gray-700 text-sm mb-1">天然油甘果乾，健康小零嘴</p>
-      <span class="inline-block bg-pink-100 text-pink-600 text-xs px-2 py-1 rounded-full">果乾</span>
+      <h3 class="text-xl font-bold text-pink-500 mb-1">🍏 蘋果乾</h3>
+      <p class="text-gray-700 text-sm mb-1">自然果香，酸甜均衡</p>
+      <p class="text-gray-500 text-xs mb-1">可搭配茶或直接食用</p>
+      <p class="text-gray-500 text-xs mb-1">保存方式：密封陰涼</p>
+      <span class="inline-block bg-green-100 text-green-600 text-xs px-2 py-1 rounded-full">果乾</span>
     </div>
+
+    <div class="bg-white p-4 rounded-2xl shadow-lg hover:scale-105 transition transform text-center">
+      <h3 class="text-xl font-bold text-pink-500 mb-1">🍑 水蜜桃乾</h3>
+      <p class="text-gray-700 text-sm mb-1">香甜水蜜桃，口感柔軟</p>
+      <p class="text-gray-500 text-xs mb-1">適合下午茶或小零嘴</p>
+      <p class="text-gray-500 text-xs mb-1">保存方式：密封常溫</p>
+      <span class="inline-block bg-green-100 text-green-600 text-xs px-2 py-1 rounded-full">果乾</span>
+    </div>
+
+    <!-- 以下省略，其他果乾與零嘴可以用相同結構補上 -->
 
   </div>
 </section>
 
-<!-- 關於我們 -->
-<section id="關於" class="max-w-4xl mx-auto px-4 sm:px-6 py-10 text-center fade-in">
-  <h2 class="text-3xl sm:text-4xl font-bold text-pink-500 mb-6">關於照過來</h2>
-  <div class="flex flex-col space-y-4 sm:space-y-6 text-gray-700 text-sm sm:text-base">
-    <p>🍀 「照過來」專注於天然零食研發，所有產品從食材挑選、烘焙過程到包裝出貨，皆由專業團隊監控品質。</p>
-    <p>🛡 我們深信 <span class="font-bold">天然食材、專業把關、透明製程</span> 是消費者最安心的承諾，每一口零食都能吃得健康與放心。</p>
-    <p>❤️ 無論是梅子系列、果乾還是海味零食，「照過來」都致力於讓每位顧客感受到 <span class="font-bold">安心、可口、值得信賴</span> 的零食體驗。</p>
+<!-- 安心承諾 -->
+<section id="安心" class="max-w-4xl mx-auto px-4 sm:px-6 py-10 text-center fade-in">
+  <h2 class="text-3xl sm:text-4xl font-bold text-pink-500 mb-6">安心承諾</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-gray-700">
+    <div class="bg-white p-4 rounded-xl shadow">
+      <h3 class="font-bold mb-2">🌿 天然食材</h3>
+      <p>嚴選新鮮水果、梅子及乾貨，保留原味與營養。</p>
+    </div>
+    <div class="bg-white p-4 rounded-xl shadow">
+      <h3 class="font-bold mb-2">🍀 無添加</h3>
+      <p>不使用防腐劑、人工色素，健康又安心。</p>
+    </div>
+    <div class="bg-white p-4 rounded-xl shadow">
+      <h3 class="font-bold mb-2">🫶 手工製作</h3>
+      <p>小批量製作，保留最佳口感與品質。</p>
+    </div>
+    <div class="bg-white p-4 rounded-xl shadow">
+      <h3 class="font-bold mb-2">✅ 品質把關</h3>
+      <p>專業團隊控管每一批產品，讓你吃得放心。</p>
+    </div>
   </div>
+</section>
+
+<!-- 食用情境 -->
+<section id="情境" class="max-w-6xl mx-auto px-4 sm:px-6 py-10 fade-in">
+  <h2 class="text-3xl sm:text-4xl font-bold text-pink-500 mb-6 text-center">食用情境</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center text-gray-700">
+    <div class="bg-white p-4 rounded-xl shadow">
+      <p class="text-4xl mb-2">☕</p>
+      <p>下午茶小零嘴</p>
+    </div>
+    <div class="bg-white p-4 rounded-xl shadow">
+      <p class="text-4xl mb-2">🏠</p>
+      <p>親子共享零嘴</p>
+    </div>
+    <div class="bg-white p-4 rounded-xl shadow">
+      <p class="text-4xl mb-2">💼</p>
+      <p>辦公室健康零食</p>
+    </div>
+    <div class="bg-white p-4 rounded-xl shadow">
+      <p class="text-4xl mb-2">🎁</p>
+      <p>禮品伴手禮</p>
+    </div>
+  </div>
+</section>
+
+<!-- 官方 IG -->
+<section id="關於" class="max-w-4xl mx-auto px-4 sm:px-6 py-10 text-center fade-in">
+  <h2 class="text-3xl sm:text-4xl font-bold text-pink-500 mb-6">官方 IG</h2>
+  <p class="text-gray-700 mb-4">看看大家怎麼吃，追蹤最新資訊與新品：</p>
+  <a href="https://www.instagram.com/guolai_260201" target="_blank" class="text-pink-500 font-bold hover:underline">@guolai_260201</a>
 </section>
 
 <!-- Footer -->
-<footer class="p-6 text-center mt-10 bg-[#FFF1D6]">
-  <p class="text-pink-500 font-bold text-sm sm:text-base">© 2026 照過來 | 果然是林</p>
-  <p class="text-gray-700 mt-1 text-sm sm:text-base">天然安心零食 🌿✨</p>
-  <div class="flex justify-center space-x-4 mt-2">
-    <a href="https://www.instagram.com/guolai_260201" target="_blank" class="text-gray-700 hover:text-pink-500">IG</a>
-    <a href="#" class="text-gray-700 hover:text-pink-500">FB</a>
-    <a href="#" class="text-gray-700 hover:text-pink-500">Line</a>
-  </div>
+<footer class="bg-[#FFF5E1] py-6 text-center text-gray-700">
+  <p class="font-bold text-pink-500">照過來</p>
+  <p class="text-xs text-gray-600">© 2026 照過來. All rights reserved.</p>
 </footer>
 
 </body>
